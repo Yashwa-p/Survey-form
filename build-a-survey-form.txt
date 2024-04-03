@@ -1,0 +1,101 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Electronics survey form</h1>
+    <p id="description">Please take the time to fill out this form</p>
+<form id="survey-form">
+      <fieldset class="">
+        <label for="name" id="name-label">First name: <input id="name" name="first-name" type="text" required placeholder="John"/></label>
+      <label for="last-name">Last name: <input id="last-name" name="last-name" type="text" required placeholder="Roberts"/></label>
+      <label for="email" id="email-label">Email address: <input id="email" name="email" type="email" required placeholder="John@gmail.com" pattern="name@gmail.com"/></label>
+      </fieldset>
+      <fieldset>        
+        <label id="number-label">How old are you?<input type="number" id="number" min="12" max="120" required placeholder="12" value="12"></label>
+      </fieldset>
+      <fieldset>
+      <Legend>Do you have a phone?</legend>
+        <input type="radio" id="yes" name="phone" class="inline" value="yes"/><label>Yes</label required>
+        <input type="radio" id="no" name="phone" class="inline" value="no"/><label>No</label>
+      </fieldset>
+      <fieldset>
+        <label>How many hours of screen time do you have
+          <select id="dropdown" name="screentime">
+            <option value="0">(select one)</option>
+            <option value="1">1-2 hours</option>
+            <option value="2">3-4 hour</option>
+            <option value="3">5 hours</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>What do you use most of your electronics for?</legend>
+        <input class="inline" id="gaming" type="checkbox" value="gaming"/><label>Gaming</label>
+        <input class="inline" id="homework" type="checkbox" value="homework"/><label>Homework</label>
+        <input class="inline" id="other" type="checkbox" value="other"/><label>Other</label>
+      </fieldset>
+      <fieldset>
+         <label for="bio">Any comments/questions/concerns:
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Thank you for your time..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+input[type="text"] {
+  display: block;
+  margin: 0.5rem 0;
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+body {
+  background-color: #1b1b32;
+  color: #f5f6f7;
+}
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+textarea {
+  display: block;
+}
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+h1, p {
+  text-align: center
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+** end of undefined **
+
